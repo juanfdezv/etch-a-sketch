@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
+
+:root{
+    --pixel-size: 32px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+
+.dash{
+    background-color: #353535;
+    height: 100%;
+    flex: 1;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin: 0.25em 0;
+}
+
+.dash p{
+    color: #c4c4c4;
+    margin-bottom: 1em;
+}
+
+.thin-line{
+    width: 100%;
+    height: 1.5px;
+    background-color: #a6ebc9;
+    margin-bottom: 1em;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100%;
+    margin: 0.25em 0;
+    padding: 0.5em 0;
+    border-radius: 15px;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.dark-btn{
+    background-color: transparent;
+    color: white;
+}
+
+.dark-btn:hover{
+    background-color: #252525;
+}
+
+.current{
+    background-color: #151515;
+    /*border-bottom: 3px solid #252525;*/
+}
+
+.current:hover{
+    background-color: #151515;
+    cursor: default;
+}
+
+.light-btn{
+    background-color: #a6ebc9;
+    border-bottom: 3px solid #86bda2;
+    margin-top: auto;
+}
+
+.light-btn:hover{
+    background-color: #b1fad6;
+    border-bottom: 3px solid #91ccaf;
+}
+
+.container{
+    background-color: #e4e4e4;
+    height: 100%;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas{
+    background-color: white;
+    height: 512px;
+    width: 512px;
+    -webkit-box-shadow: 10px 10px 0px -6px #c4c4c4;
+    -moz-box-shadow: 10px 10px 0px -6px #c4c4c4;
+    box-shadow: 10px 10px 0px -6px #c4c4c4;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.signature{
+    display: flex;
+    align-items: center;
+    color: #a0a0a0;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    font-size: 0.9em;
+}
+
+.fa-github{
+    margin-right: 0.5em;
+}
+
+/* ---------------- JS use ---------------- */
+
+.pixel{
+    background-color: white;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+    /*border-bottom: 0.5px solid #e7e7e7;
+    border-right: 0.5px solid #e7e7e7;*/
+}
+
+
